@@ -15,6 +15,7 @@
       # $ nix-env -qaP | grep wget
       environment.systemPackages = [
         pkgs.deno
+	pkgs.doctl
 	pkgs.gh
 	pkgs.k9s
         pkgs.neovim
