@@ -17,8 +17,10 @@
         pkgs.deno
 	pkgs.doctl
 	pkgs.gh
+	pkgs.imagemagick
 	pkgs.k9s
         pkgs.neovim
+	pkgs.sqlite
       ];
 
       homebrew = {
@@ -33,7 +35,6 @@
 	  "raycast"
 	];
         brews = [
-	  "imagemagick"
 	  "n"
 	];
       };
