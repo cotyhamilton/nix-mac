@@ -24,6 +24,7 @@
 	pkgs.k9s
         pkgs.neovim
 	pkgs.sqlite
+	pkgs.vscode
       ];
 
       homebrew = {
