@@ -16,6 +16,7 @@
       environment.systemPackages = [
         pkgs.deno
 	pkgs.gh
+	pkgs.k9s
         pkgs.neovim
       ];
 
