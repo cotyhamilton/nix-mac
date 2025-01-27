@@ -11,12 +11,15 @@
   outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew }:
   let
     configuration = { pkgs, ... }: {
+      nixpkgs.config.allowUnfree = true;
+
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages = [
         pkgs.deno
 	pkgs.doctl
 	pkgs.gh
+	pkgs.google-chrome
 	pkgs.imagemagick
 	pkgs.k9s
         pkgs.neovim
@@ -33,6 +36,7 @@
         casks = [
 	  "orbstack"
 	  "raycast"
+	  "whisky"
 	];
         brews = [
 	  "n"
