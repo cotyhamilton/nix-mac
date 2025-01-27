@@ -29,6 +29,7 @@
           cleanup = "zap";
         };
         casks = [
+	  "orbstack"
 	  "raycast"
 	];
         brews = [
