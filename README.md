@@ -2,7 +2,7 @@
 
 Nix config for my mac
 
-## Install nix
+## install nix
 
 ```bash
 curl \
@@ -13,13 +13,13 @@ curl \
   | sh -s -- install
 ```
 
-## Bootstrap
+## bootstrap
 
 ```bash
 nix run nix-darwin -- switch --flake github:cotyhamilton/nix-mac#book
 ```
 
-## Update
+## update
 
 Clone repo
 
@@ -32,3 +32,8 @@ Rebuild
 ```bash
 darwin-rebuild switch --flake ~/nix#book
 ```
+
+## reference
+
+- [youtube (dreams of autonomy)](https://youtu.be/Z8BL8mdzWHI)
+- [nix-darwin config options](https://daiderd.com/nix-darwin/manual/)
