@@ -26,13 +26,20 @@
           environment.systemPackages = [
             pkgs.deno
             pkgs.doctl
+            pkgs.fzf
             pkgs.gh
             pkgs.google-chrome
             pkgs.imagemagick
             pkgs.k9s
             pkgs.neovim
+            pkgs.sops
             pkgs.sqlite
+            pkgs.stow
             pkgs.vscode
+          ];
+
+          fonts.packages = [
+            pkgs.nerd-fonts.jetbrains-mono
           ];
 
           homebrew = {
@@ -43,6 +50,7 @@
               cleanup = "zap";
             };
             casks = [
+              "ghostty"
               "orbstack"
               "raycast"
               "whisky"
@@ -77,6 +85,7 @@
           system.defaults = {
             dock.autohide = true;
             finder.AppleShowAllExtensions = true;
+            finder.AppleShowAllFiles = true;
           };
         };
     in
