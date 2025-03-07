@@ -24,11 +24,12 @@
           # List packages installed in system profile. To search by name, run:
           # $ nix-env -qaP | grep wget
           environment.systemPackages = [
-            pkgs.deno
+            pkgs.age
             pkgs.doctl
             pkgs.fzf
             pkgs.gh
             pkgs.google-chrome
+            pkgs.gnupg
             pkgs.imagemagick
             pkgs.k9s
             pkgs.neovim
@@ -80,7 +81,7 @@
             extra-platforms = x86_64-darwin aarch64-darwin
           '';
 
-          security.pam.enableSudoTouchIdAuth = true;
+          security.pam.services.sudo_local.touchIdAuth = true;
 
           system.defaults = {
             dock.autohide = true;
